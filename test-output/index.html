@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\anton\AppData\Local\Temp\testng-eclipse--204855064\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 2 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings,...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Sett...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Sett...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite" hash-for-method="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Course Management, Course Equivalence, Y, Y, Y, CourseMaster_CourseID)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Search results is not displayed
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite(CurriculumReadTestSuite.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Setup Management, Degree Audit Setup, Y, Y, Y, Goal)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Search results is not displayed
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite(CurriculumReadTestSuite.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings,...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings,...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings, Periods, Period, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Setup Management, Programme Block Series, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Admissions, Admissions Period, Y, Y, Y, BusinessMeaningName)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Goals and Programmes, Admissions Program, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Sett...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Sett...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Settings, General, Period, Y, Y, Y, BusinessMeaningName)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Goals and Programmes, Programme Master, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Goals and Programmes, Admissions Program Offering, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Setup Management, Block Registration Setup, Y, Y, Y, BlockType)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Goals and Programmes, Academic Programme, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Settings, Facility, Facility Period, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Periods, Period, Y, Y, Y, Description)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Periods, Academic Period, Y, Y, Y, Name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Settings, All, Period, Y, Y, Y, BusinessMeaningName)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, General, Period, Y, Y, Y, Description)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Course Management, Course Master, Y, Y, Y, CourseNumber)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)">
+                  </a> <!-- CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...) -->
+                  <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite</span>
+                  <span class="parameters">(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Goals and Programmes, Programme Offering Item, Y, Y, Y, AcademicProgram)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\anton\AppData\Local\Temp\testng-eclipse--204855064\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CurricReadSmokeTest_roles_CurriculumReadTestSuite&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(0, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(0, 3, 42537);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(1, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(1, 3, 40683);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(2, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(2, 3, 26472);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(3, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(3, 3, 22361);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(4, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(4, 3, 21457);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(5, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(5, 3, 20581);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(6, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(6, 3, 20326);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(7, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(7, 3, 15823);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(8, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(8, 3, 15578);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(9, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(9, 3, 15542);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(10, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(10, 3, 14762);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(11, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(11, 3, 14301);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(12, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(12, 3, 14109);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(13, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(13, 3, 13849);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(14, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(14, 3, 13766);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(15, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(15, 3, 13668);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(16, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(16, 3, 13510);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'CurricReadSmokeTest_roles_CurriculumReadTestSuite')
+data.setCell(17, 2, 'org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite')
+data.setCell(17, 3, 13244);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING billingMenu->Settings->Periods->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Period" is Visible under "billingMenu->Settings->Periods"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Periodunder billingMenu->Settings->Periods</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2014 September</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: 2014 September</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED billingMenu->Settings->Periods->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Options->Setup Management->Programme Block Series</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Programme Block Series" is Visible under "academicMenu->Options->Setup Management"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Programme Block Series" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Programme Block Seriesunder academicMenu->Options->Setup Management</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">PB01101 _ MA Design 1 year FT</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: PB01101 _ MA Design 1 year FT</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED academicMenu->Options->Setup Management->Programme Block Series</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING admissionsMenu->Settings->Admissions->Admissions Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Admissions Period" is Visible under "admissionsMenu->Settings->Admissions"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Admissions Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Admissions Periodunder admissionsMenu->Settings->Admissions</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2014 September</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "BusinessMeaningName" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BusinessMeaningName" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "BusinessMeaningName" is: AdmissionsPeriod.2014September</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "BusinessMeaningName" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BusinessMeaningName" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED admissionsMenu->Settings->Admissions->Admissions Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING admissionsMenu->Settings->Goals and Programmes->Admissions Program</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Admissions Program" is Visible under "admissionsMenu->Settings->Goals and Programmes"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Admissions Program" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Admissions Programunder admissionsMenu->Settings->Goals and Programmes</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Academic Programm MMU_Test</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: Academic Programm MMU_Test</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED admissionsMenu->Settings->Goals and Programmes->Admissions Program</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Sett...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING financialAidMenu->Settings->General->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Period" is Visible under "financialAidMenu->Settings->General"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Periodunder financialAidMenu->Settings->General</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2014 September</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "BusinessMeaningName" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BusinessMeaningName" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "BusinessMeaningName" is: Period.2014September</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "BusinessMeaningName" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BusinessMeaningName" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED financialAidMenu->Settings->General->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Settings->Goals and Programmes->Programme Master</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Programme Master" is Visible under "academicMenu->Settings->Goals and Programmes"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Programme Master" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Programme Masterunder academicMenu->Settings->Goals and Programmes</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:1</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">UAT Test Programme Master 2</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: UAT Test Programme Master 2</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED academicMenu->Settings->Goals and Programmes->Programme Master</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING admissionsMenu->Settings->Goals and Programmes->Admissions Program Offering</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Admissions Program Offering" is Visible under "admissionsMenu->Settings->Goals and Programmes"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Admissions Program Offering" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Admissions Program Offeringunder admissionsMenu->Settings->Goals and Programmes</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">ACCA January Start _ AO01222JAN</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: ACCA January Start _ AO01222JAN</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED admissionsMenu->Settings->Goals and Programmes->Admissions Program Offering</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Options->Setup Management->Block Registration Setup</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Block Registration Setup" is Visible under "academicMenu->Options->Setup Management"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Block Registration Setup" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Block Registration Setupunder academicMenu->Options->Setup Management</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Prescribed</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "BlockType" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BlockType" is disabled</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Data in mandatory field "BlockType" is: Prescribed</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "BlockType" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BlockType" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED academicMenu->Options->Setup Management->Block Registration Setup</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Settings->Goals and Programmes->Academic Programme</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Academic Programme" is Visible under "academicMenu->Settings->Goals and Programmes"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Academic Programme" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Academic Programmeunder academicMenu->Settings->Goals and Programmes</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">AC00007 _ Visiting Research Students (Cheshire)</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: AC00007 _ Visiting Research Students (Cheshire)</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED academicMenu->Settings->Goals and Programmes->Academic Programme</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING mosaicManagerMenu->Settings->Facility->Facility Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Facility Period" is Visible under "mosaicManagerMenu->Settings->Facility"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Facility Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Facility Periodunder mosaicManagerMenu->Settings->Facility</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2005 August</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: 2005 August</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED mosaicManagerMenu->Settings->Facility->Facility Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Settings->Periods->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Period" is Visible under "academicMenu->Settings->Periods"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Periodunder academicMenu->Settings->Periods</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2014 September</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Description" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Description" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Description" is: AUTOMATION_14/03/2018 16:56:36_1TIIG7</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Description" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Description" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED academicMenu->Settings->Periods->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Settings->Periods->Academic Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Academic Period" is Visible under "academicMenu->Settings->Periods"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Academic Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Academic Periodunder academicMenu->Settings->Periods</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2014 September</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Name" is: 2014 September</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Name" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Name" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED academicMenu->Settings->Periods->Academic Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING mosaicManagerMenu->Settings->All->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Period" is Visible under "mosaicManagerMenu->Settings->All"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Periodunder mosaicManagerMenu->Settings->All</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2014 September</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "BusinessMeaningName" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BusinessMeaningName" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "BusinessMeaningName" is: Period.2014September</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "BusinessMeaningName" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "BusinessMeaningName" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED mosaicManagerMenu->Settings->All->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING admissionsMenu->Settings->General->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Period" is Visible under "admissionsMenu->Settings->General"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Period" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Periodunder admissionsMenu->Settings->General</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">2014 September</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "Description" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Description" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "Description" is: AUTOMATION_14/03/2018 16:56:36_1TIIG7</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "Description" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "Description" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED admissionsMenu->Settings->General->Period</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Options->Course Management->Course Master</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Course Master" is Visible under "academicMenu->Options->Course Management"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Course Master" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Course Masterunder academicMenu->Options->Course Management</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">1D1234ACTIVE</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "CourseNumber" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "CourseNumber" is disabled</span>
+                <span class="reporter-method-output">Data in mandatory field "CourseNumber" is: 1234</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "CourseNumber" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "CourseNumber" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED academicMenu->Options->Course Management->Course Master</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING admissionsMenu->Settings->Goals and Programmes->Programme Offering Item</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Programme Offering Item" is Visible under "admissionsMenu->Settings->Goals and Programmes"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Programme Offering Item" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Programme Offering Itemunder admissionsMenu->Settings->Goals and Programmes</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">Assert Check: Verifying if search returns some data</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search results returned non zero rows. The row count is:51</span>
+                <span class="reporter-method-output">Clicking on the first record</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">ACCA 4 years PT _ AI05325</span>
+                <span class="reporter-method-output">waiting for details page to appear</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the View button is visible in the details page</span>
+                <span class="reporter-method-output">Assert Check PASSED: The View button is visible in the details page</span>
+                <span class="reporter-method-output">Clicking the View button in the details page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if the Edit dialog popup is visible</span>
+                <span class="reporter-method-output">Assert Check PASSED: Edit Dialog popup is visible in the Search Page</span>
+                <span class="reporter-method-output">Assert Check: Verifying if mandatory field "AcademicProgram" is disabled</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "AcademicProgram" is disabled</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Data in mandatory field "AcademicProgram" is: AC01222 _ ACCA</span>
+                <span class="reporter-method-output">Assert Check: Verifying if length of data in mandatory field "AcademicProgram" is > 0</span>
+                <span class="reporter-method-output">Assert Check PASSED: mandatory field "AcademicProgram" has some data</span>
+                <span class="reporter-method-output">Clicking the Done button in the edit dialog popUp</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">TEST PASSED admissionsMenu->Settings->Goals and Programmes->Programme Offering Item</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Options->Course Management->Course Equivalence</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Course Equivalence" is Visible under "academicMenu->Options->Course Management"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Course Equivalence" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Course Equivalenceunder academicMenu->Options->Course Management</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">FAIL: Issue with Searching. Maybe an Accplication error. See Assertion logs</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TESTING academicMenu->Options->Setup Management->Degree Audit Setup</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1</span>
+                <span class="reporter-method-output">u4sm login page present and displayed state is: true</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Selected dropdown value en-GB</span>
+                <span class="reporter-method-output">Inserted, "AA_Curric_Read" into the username text field.</span>
+                <span class="reporter-method-output">Inserted, "Temp0" into the password text field.</span>
+                <span class="reporter-method-output">Clicked the Login button.</span>
+                <span class="reporter-method-output">Explicitly waiting for 500 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if managementGroupItem "Degree Audit Setup" is Visible under "academicMenu->Options->Setup Management"</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check PASSED: managementGroupItem "Degree Audit Setup" is Visible</span>
+                <span class="reporter-method-output">clicking managementItem Degree Audit Setupunder academicMenu->Options->Setup Management</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 200 milliseconds</span>
+                <span class="reporter-method-output">Assert Check: Verifying if Search page is displayed</span>
+                <span class="reporter-method-output">Assert Check PASSED: Search page is displayed</span>
+                <span class="reporter-method-output">Clicking Simple search</span>
+                <span class="reporter-method-output">clicked search button on the academic period search page</span>
+                <span class="reporter-method-output">Getting the number of records from the search results</span>
+                <span class="reporter-method-output">FAIL: Issue with Searching. Maybe an Accplication error. See Assertion logs</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">Explicitly waiting for 1000 milliseconds</span>
+                <span class="reporter-method-output">confirmation popup displayed</span>
+                <span class="reporter-method-output">clicked OK on Logout popup</span>
+                <span class="reporter-method-output">User logged out of u4sm sucessfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+                <span class="method-start">3222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+                <span class="method-start">29695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+                <span class="method-start">45524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+                <span class="method-start">61067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settin...)</span>
+                <span class="method-start">74918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+                <span class="method-start">95500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+                <span class="method-start">138041 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+                <span class="method-start">151286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+                <span class="method-start">166049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options,...)</span>
+                <span class="method-start">206735 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+                <span class="method-start">222314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+                <span class="method-start">243772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+                <span class="method-start">258074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings...)</span>
+                <span class="method-start">272185 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)</span>
+                <span class="method-start">294548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings,...)</span>
+                <span class="method-start">314875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Sett...)</span>
+                <span class="method-start">328642 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CurricReadSmokeTest_roles_CurriculumReadTestSuite(AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Set...)</span>
+                <span class="method-start">342311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">355879 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

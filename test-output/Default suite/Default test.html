@@ -1,0 +1,1293 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 27 09:16:46 BST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>353 seconds (353259 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Course Management, Course Equivalence, Y, Y, Y, CourseMaster_CourseID<br/>
+<a href="#Output-40191541" onClick='toggleBox("Output-40191541", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-40191541" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-40191541">
+TESTING academicMenu->Options->Course Management->Course Equivalence<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Course Equivalence" is Visible under "academicMenu->Options->Course Management"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Course Equivalence" is Visible<br/>
+clicking managementItem Course Equivalenceunder academicMenu->Options->Course Management<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+FAIL: Issue with Searching. Maybe an Accplication error. See Assertion logs<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Search results is not displayed
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite(CurriculumReadTestSuite.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace40191541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40191541'><pre>java.lang.AssertionError: Search results is not displayed
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite(CurriculumReadTestSuite.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>42</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Setup Management, Degree Audit Setup, Y, Y, Y, Goal<br/>
+<a href="#Output-1900366749" onClick='toggleBox("Output-1900366749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1900366749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1900366749">
+TESTING academicMenu->Options->Setup Management->Degree Audit Setup<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Degree Audit Setup" is Visible under "academicMenu->Options->Setup Management"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Degree Audit Setup" is Visible<br/>
+clicking managementItem Degree Audit Setupunder academicMenu->Options->Setup Management<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+FAIL: Issue with Searching. Maybe an Accplication error. See Assertion logs<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Search results is not displayed
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite(CurriculumReadTestSuite.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1900366749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1900366749'><pre>java.lang.AssertionError: Search results is not displayed
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite(CurriculumReadTestSuite.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>40</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Admissions, Admissions Period, Y, Y, Y, BusinessMeaningName<br/>
+<a href="#Output-382627885" onClick='toggleBox("Output-382627885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-382627885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-382627885">
+TESTING admissionsMenu->Settings->Admissions->Admissions Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Admissions Period" is Visible under "admissionsMenu->Settings->Admissions"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Admissions Period" is Visible<br/>
+clicking managementItem Admissions Periodunder admissionsMenu->Settings->Admissions<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2014 September<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "BusinessMeaningName" is disabled<br/>
+Assert Check PASSED: mandatory field "BusinessMeaningName" is disabled<br/>
+Data in mandatory field "BusinessMeaningName" is: AdmissionsPeriod.2014September<br/>
+Assert Check: Verifying if length of data in mandatory field "BusinessMeaningName" is > 0<br/>
+Assert Check PASSED: mandatory field "BusinessMeaningName" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED admissionsMenu->Settings->Admissions->Admissions Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, General, Period, Y, Y, Y, Description<br/>
+<a href="#Output-315072539" onClick='toggleBox("Output-315072539", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-315072539" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-315072539">
+TESTING admissionsMenu->Settings->General->Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Period" is Visible under "admissionsMenu->Settings->General"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Period" is Visible<br/>
+clicking managementItem Periodunder admissionsMenu->Settings->General<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2014 September<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Description" is disabled<br/>
+Assert Check PASSED: mandatory field "Description" is disabled<br/>
+Data in mandatory field "Description" is: AUTOMATION_14/03/2018 16:56:36_1TIIG7<br/>
+Assert Check: Verifying if length of data in mandatory field "Description" is > 0<br/>
+Assert Check PASSED: mandatory field "Description" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED admissionsMenu->Settings->General->Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Goals and Programmes, Admissions Program, Y, Y, Y, Name<br/>
+<a href="#Output-42102625" onClick='toggleBox("Output-42102625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-42102625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-42102625">
+TESTING admissionsMenu->Settings->Goals and Programmes->Admissions Program<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Admissions Program" is Visible under "admissionsMenu->Settings->Goals and Programmes"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Admissions Program" is Visible<br/>
+clicking managementItem Admissions Programunder admissionsMenu->Settings->Goals and Programmes<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Academic Programm MMU_Test<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: Academic Programm MMU_Test<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED admissionsMenu->Settings->Goals and Programmes->Admissions Program<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Goals and Programmes, Admissions Program Offering, Y, Y, Y, Name<br/>
+<a href="#Output-1301987508" onClick='toggleBox("Output-1301987508", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1301987508" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1301987508">
+TESTING admissionsMenu->Settings->Goals and Programmes->Admissions Program Offering<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Admissions Program Offering" is Visible under "admissionsMenu->Settings->Goals and Programmes"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Admissions Program Offering" is Visible<br/>
+clicking managementItem Admissions Program Offeringunder admissionsMenu->Settings->Goals and Programmes<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+ACCA January Start _ AO01222JAN<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: ACCA January Start _ AO01222JAN<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED admissionsMenu->Settings->Goals and Programmes->Admissions Program Offering<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, admissionsMenu, Settings, Goals and Programmes, Programme Offering Item, Y, Y, Y, AcademicProgram<br/>
+<a href="#Output-319670866" onClick='toggleBox("Output-319670866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-319670866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-319670866">
+TESTING admissionsMenu->Settings->Goals and Programmes->Programme Offering Item<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Programme Offering Item" is Visible under "admissionsMenu->Settings->Goals and Programmes"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Programme Offering Item" is Visible<br/>
+clicking managementItem Programme Offering Itemunder admissionsMenu->Settings->Goals and Programmes<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+ACCA 4 years PT _ AI05325<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "AcademicProgram" is disabled<br/>
+Assert Check PASSED: mandatory field "AcademicProgram" is disabled<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Data in mandatory field "AcademicProgram" is: AC01222 _ ACCA<br/>
+Assert Check: Verifying if length of data in mandatory field "AcademicProgram" is > 0<br/>
+Assert Check PASSED: mandatory field "AcademicProgram" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED admissionsMenu->Settings->Goals and Programmes->Programme Offering Item<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Course Management, Course Master, Y, Y, Y, CourseNumber<br/>
+<a href="#Output-1912850431" onClick='toggleBox("Output-1912850431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1912850431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1912850431">
+TESTING academicMenu->Options->Course Management->Course Master<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Course Master" is Visible under "academicMenu->Options->Course Management"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Course Master" is Visible<br/>
+clicking managementItem Course Masterunder academicMenu->Options->Course Management<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+1D1234ACTIVE<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "CourseNumber" is disabled<br/>
+Assert Check PASSED: mandatory field "CourseNumber" is disabled<br/>
+Data in mandatory field "CourseNumber" is: 1234<br/>
+Assert Check: Verifying if length of data in mandatory field "CourseNumber" is > 0<br/>
+Assert Check PASSED: mandatory field "CourseNumber" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED academicMenu->Options->Course Management->Course Master<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Setup Management, Programme Block Series, Y, Y, Y, Name<br/>
+<a href="#Output-633326333" onClick='toggleBox("Output-633326333", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-633326333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-633326333">
+TESTING academicMenu->Options->Setup Management->Programme Block Series<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Programme Block Series" is Visible under "academicMenu->Options->Setup Management"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Programme Block Series" is Visible<br/>
+clicking managementItem Programme Block Seriesunder academicMenu->Options->Setup Management<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+PB01101 _ MA Design 1 year FT<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: PB01101 _ MA Design 1 year FT<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED academicMenu->Options->Setup Management->Programme Block Series<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Options, Setup Management, Block Registration Setup, Y, Y, Y, BlockType<br/>
+<a href="#Output-2096539129" onClick='toggleBox("Output-2096539129", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096539129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096539129">
+TESTING academicMenu->Options->Setup Management->Block Registration Setup<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Block Registration Setup" is Visible under "academicMenu->Options->Setup Management"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Block Registration Setup" is Visible<br/>
+clicking managementItem Block Registration Setupunder academicMenu->Options->Setup Management<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Prescribed<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "BlockType" is disabled<br/>
+Assert Check PASSED: mandatory field "BlockType" is disabled<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Data in mandatory field "BlockType" is: Prescribed<br/>
+Assert Check: Verifying if length of data in mandatory field "BlockType" is > 0<br/>
+Assert Check PASSED: mandatory field "BlockType" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED academicMenu->Options->Setup Management->Block Registration Setup<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Goals and Programmes, Academic Programme, Y, Y, Y, Name<br/>
+<a href="#Output-1648232591" onClick='toggleBox("Output-1648232591", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1648232591" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1648232591">
+TESTING academicMenu->Settings->Goals and Programmes->Academic Programme<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Academic Programme" is Visible under "academicMenu->Settings->Goals and Programmes"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Academic Programme" is Visible<br/>
+clicking managementItem Academic Programmeunder academicMenu->Settings->Goals and Programmes<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+AC00007 _ Visiting Research Students (Cheshire)<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: AC00007 _ Visiting Research Students (Cheshire)<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED academicMenu->Settings->Goals and Programmes->Academic Programme<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Goals and Programmes, Programme Master, Y, Y, Y, Name<br/>
+<a href="#Output-972865270" onClick='toggleBox("Output-972865270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-972865270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-972865270">
+TESTING academicMenu->Settings->Goals and Programmes->Programme Master<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Programme Master" is Visible under "academicMenu->Settings->Goals and Programmes"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Programme Master" is Visible<br/>
+clicking managementItem Programme Masterunder academicMenu->Settings->Goals and Programmes<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:1<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+UAT Test Programme Master 2<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: UAT Test Programme Master 2<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED academicMenu->Settings->Goals and Programmes->Programme Master<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Periods, Period, Y, Y, Y, Description<br/>
+<a href="#Output-1716932897" onClick='toggleBox("Output-1716932897", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1716932897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1716932897">
+TESTING academicMenu->Settings->Periods->Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Period" is Visible under "academicMenu->Settings->Periods"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Period" is Visible<br/>
+clicking managementItem Periodunder academicMenu->Settings->Periods<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2014 September<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Description" is disabled<br/>
+Assert Check PASSED: mandatory field "Description" is disabled<br/>
+Data in mandatory field "Description" is: AUTOMATION_14/03/2018 16:56:36_1TIIG7<br/>
+Assert Check: Verifying if length of data in mandatory field "Description" is > 0<br/>
+Assert Check PASSED: mandatory field "Description" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED academicMenu->Settings->Periods->Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, academicMenu, Settings, Periods, Academic Period, Y, Y, Y, Name<br/>
+<a href="#Output-801569151" onClick='toggleBox("Output-801569151", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-801569151" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-801569151">
+TESTING academicMenu->Settings->Periods->Academic Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Academic Period" is Visible under "academicMenu->Settings->Periods"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Academic Period" is Visible<br/>
+clicking managementItem Academic Periodunder academicMenu->Settings->Periods<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2014 September<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: 2014 September<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED academicMenu->Settings->Periods->Academic Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Settings, Facility, Facility Period, Y, Y, Y, Name<br/>
+<a href="#Output-1026483832" onClick='toggleBox("Output-1026483832", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1026483832" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1026483832">
+TESTING mosaicManagerMenu->Settings->Facility->Facility Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Facility Period" is Visible under "mosaicManagerMenu->Settings->Facility"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Facility Period" is Visible<br/>
+clicking managementItem Facility Periodunder mosaicManagerMenu->Settings->Facility<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2005 August<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: 2005 August<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED mosaicManagerMenu->Settings->Facility->Facility Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, billingMenu, Settings, Periods, Period, Y, Y, Y, Name<br/>
+<a href="#Output-905080434" onClick='toggleBox("Output-905080434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-905080434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-905080434">
+TESTING billingMenu->Settings->Periods->Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Period" is Visible under "billingMenu->Settings->Periods"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Period" is Visible<br/>
+clicking managementItem Periodunder billingMenu->Settings->Periods<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2014 September<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "Name" is disabled<br/>
+Assert Check PASSED: mandatory field "Name" is disabled<br/>
+Data in mandatory field "Name" is: 2014 September<br/>
+Assert Check: Verifying if length of data in mandatory field "Name" is > 0<br/>
+Assert Check PASSED: mandatory field "Name" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED billingMenu->Settings->Periods->Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, financialAidMenu, Settings, General, Period, Y, Y, Y, BusinessMeaningName<br/>
+<a href="#Output-1237762639" onClick='toggleBox("Output-1237762639", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237762639" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237762639">
+TESTING financialAidMenu->Settings->General->Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Period" is Visible under "financialAidMenu->Settings->General"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Period" is Visible<br/>
+clicking managementItem Periodunder financialAidMenu->Settings->General<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2014 September<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "BusinessMeaningName" is disabled<br/>
+Assert Check PASSED: mandatory field "BusinessMeaningName" is disabled<br/>
+Data in mandatory field "BusinessMeaningName" is: Period.2014September<br/>
+Assert Check: Verifying if length of data in mandatory field "BusinessMeaningName" is > 0<br/>
+Assert Check PASSED: mandatory field "BusinessMeaningName" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED financialAidMenu->Settings->General->Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+<tr>
+<td title='org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite.CurricReadSmokeTest_roles_CurriculumReadTestSuite()'><b>CurricReadSmokeTest_roles_CurriculumReadTestSuite</b><br>Test class: org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite<br>Parameters: AA_Curric_Read, Temp0, View Curriculum, RolesAndPermissions.xlsx, CurricRead, mosaicManagerMenu, Settings, All, Period, Y, Y, Y, BusinessMeaningName<br/>
+<a href="#Output-1877062907" onClick='toggleBox("Output-1877062907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1877062907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1877062907">
+TESTING mosaicManagerMenu->Settings->All->Period<br/>
+Explicitly waiting for 200 milliseconds<br/>
+RUNNING: CurricReadSmokeTest_roles_CurriculumReadTestSuite1<br/>
+u4sm login page present and displayed state is: true<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Selected dropdown value en-GB<br/>
+Inserted, "AA_Curric_Read" into the username text field.<br/>
+Inserted, "Temp0" into the password text field.<br/>
+Clicked the Login button.<br/>
+Explicitly waiting for 500 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if managementGroupItem "Period" is Visible under "mosaicManagerMenu->Settings->All"<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check PASSED: managementGroupItem "Period" is Visible<br/>
+clicking managementItem Periodunder mosaicManagerMenu->Settings->All<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if Search page is displayed<br/>
+Assert Check PASSED: Search page is displayed<br/>
+Clicking Simple search<br/>
+clicked search button on the academic period search page<br/>
+Getting the number of records from the search results<br/>
+Assert Check: Verifying if search returns some data<br/>
+Assert Check PASSED: Search results returned non zero rows. The row count is:51<br/>
+Clicking on the first record<br/>
+Explicitly waiting for 200 milliseconds<br/>
+2014 September<br/>
+waiting for details page to appear<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Explicitly waiting for 200 milliseconds<br/>
+Assert Check: Verifying if the View button is visible in the details page<br/>
+Assert Check PASSED: The View button is visible in the details page<br/>
+Clicking the View button in the details page<br/>
+Assert Check: Verifying if the Edit dialog popup is visible<br/>
+Assert Check PASSED: Edit Dialog popup is visible in the Search Page<br/>
+Assert Check: Verifying if mandatory field "BusinessMeaningName" is disabled<br/>
+Assert Check PASSED: mandatory field "BusinessMeaningName" is disabled<br/>
+Data in mandatory field "BusinessMeaningName" is: Period.2014September<br/>
+Assert Check: Verifying if length of data in mandatory field "BusinessMeaningName" is > 0<br/>
+Assert Check PASSED: mandatory field "BusinessMeaningName" has some data<br/>
+Clicking the Done button in the edit dialog popUp<br/>
+Explicitly waiting for 200 milliseconds<br/>
+TEST PASSED mosaicManagerMenu->Settings->All->Period<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+Explicitly waiting for 1000 milliseconds<br/>
+confirmation popup displayed<br/>
+clicked OK on Logout popup<br/>
+User logged out of u4sm sucessfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite@25bbe1b6</td></tr>
+</table><p>
+</body>
+</html>

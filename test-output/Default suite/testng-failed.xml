@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite">
+        <methods>
+          <include name="CurricReadSmokeTest_roles_CurriculumReadTestSuite"/>
+        </methods>
+      </class> <!-- org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite -->
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite">
+        <methods>
+          <include name="CurricReadSmokeTest_roles_CurriculumReadTestSuite" invocation-numbers="5 8"/>
+          <include name="testSetUp"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- org.mmu.g4sm.qa.at.tests.roles.CurriculumReadTestSuite -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
